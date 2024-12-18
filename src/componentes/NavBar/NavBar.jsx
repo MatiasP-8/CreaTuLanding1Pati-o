@@ -1,4 +1,5 @@
 import React from 'react'
+import './NavBar.css';
 import CartWidgeet from '../CartWidget/CartWidgeet'
 
 const NavBar = () => {
