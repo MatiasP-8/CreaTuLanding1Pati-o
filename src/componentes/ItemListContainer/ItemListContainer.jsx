@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { getProductos } from "../../asyncmock";
+import ItemList from '../ItemList/ItemList';
+import './itemContianer.css'
 
-const ItemListContainer = (props)=>{
+const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    getProductos()
+      .then(respuesta => setProductos(respuesta)) 
+      .catch(error => console.log(error)); 
+  }, []);
+
   return (
-   <p>{props.saludo}</p>
-  )
-}
+    <div className='container'>
+      <h2>PRODUCTOS</h2>
+      <ItemList productos={productos}> </ItemList>
+    </div>
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer 

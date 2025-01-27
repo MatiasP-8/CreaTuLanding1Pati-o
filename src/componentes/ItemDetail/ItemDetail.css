@@ -1,0 +1,8 @@
+.containerDetail{
+    width: 500px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

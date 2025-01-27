@@ -1,0 +1,15 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.buttonDetalle{
+    width: 100px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+}

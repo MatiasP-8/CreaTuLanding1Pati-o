@@ -10,4 +10,4 @@ const CartWidgeet = () => {
   )
 }
 
-export default CartWidgeet
+export default CartWidgeet 
