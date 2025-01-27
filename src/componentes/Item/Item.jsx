@@ -1,12 +1,12 @@
 import React from "react";
 import './item.css'
 
-const Item = ({id,imagen,nombre,precio }) => {
+const Item = ({id,imagen,titulo,precio }) => {
   return (
     <div>
-      <img src={imagen} alt={nombre} />
+      <img src={imagen} alt={titulo} />
       <p>Id: {id}</p>
-      <h3>Nombre: {nombre}</h3>
+      <p> {titulo}</p>
       <p>Precio: {precio}</p>
       <button className="buttonDetalle">Ver Detalle</button>
     </div>
